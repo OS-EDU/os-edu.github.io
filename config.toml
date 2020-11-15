@@ -1,5 +1,5 @@
 baseURL = "https://os-edu.github.io/"
-title = "OS-EDU-Site"
+title = "OS-EDU-SITE"
 theme = "temple"
 # If not set, it will not appear. Otherwise it will show below your footer links
 copyright = "(c) 2020 - 2020 Aos Dabbagh -- All rights reserved."
