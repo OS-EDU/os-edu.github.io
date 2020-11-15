@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Basic Page Needs –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>{{ .Title }}</title>
+  <meta name="description" content="{{ .Title }}">
+  <meta name="author" content="{{ .Site.Author.name }}">
+  <!-- Mobile Specific Metas ––––––––––––––––––––––––––––––––––––––––––––––-->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- FONT –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <noscript>
+    <link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:400,600" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="{{ .Site.BaseURL }}css/fonts.css">
+  </noscript>
+  <!-- CSS –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <!-- Pure CSS -->
+  <style type="text/css" media="screen">
+    {{ partial "css/base-min.css" . | safeCSS }}
+  </style>
+  <style type="text/css" media="screen">
+    {{ partial "css/menus-min.css" . | safeCSS }}
+  </style>
+  <style type="text/css" media="screen">
+    {{ partial "css/grids-min.css" . | safeCSS }}
+  </style>
+  <style type="text/css" media="screen">
+    {{ partial "css/tables-min.css" . | safeCSS }}
+  </style>
+  <!--[if lt IE 8]>
+  <style type="text/css" media="screen">
+    {{ partial "css/grids-responsive-old-ie-min.css" . | safeCSS }}
+  </style>
+  <![endif] -->
+  <!--[if gt IE 8]><!-->
+  <style type="text/css" media="screen">
+    {{ partial "css/grids-responsive-min.css" . | safeCSS }}
+  </style>
+  <!--<![endif]-->
+
+  <!-- Custom CSS -->
+  <style type="text/css" media="screen">
+    {{ if isset .Site.Params "darkmode" }}
+      {{ partial "css/custom-dark.css" . | safeCSS }}
+    {{ else }}
+      {{ partial "css/custom-light.css" . | safeCSS }}
+    {{ end }}
+  </style>
+
+  <style type="text/css" media="screen">
+    {{ partial "css/custom-base.css" . | safeCSS }}
+  </style>
+
+  <!-- Icon -->
+  <link rel="shortcut icon" 
+  {{ if .Site.Params.faviconfile }}
+    href="{{ .Site.Params.faviconfile | absURL }}" 
+  {{ else }} 
+    href="{{ .Site.BaseURL }}img/favicon.ico"
+  {{ end }}
+  type="image/x-icon">
+
+  <!-- RSS Feed -->
+  {{ if .RSSLink }}
+  <link href="{{ .RSSLink }}" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }} Feed" />
+  {{ end }}
+
+  <!-- User custom head -->
+  {{ partial "custom_head.html" . }}
+</head>
+<body>
