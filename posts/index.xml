@@ -1,11 +1,19 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on OS-EDU-Site</title><link>https://os-edu.github.io/posts/</link><description>Recent content in Posts on OS-EDU-Site</description><generator>Hugo -- gohugo.io</generator><managingEditor>wangfuzheng0814@foxmail.com (os-site)</managingEditor><webMaster>wangfuzheng0814@foxmail.com (os-site)</webMaster><copyright>(c) 2020 - 2020 Aos Dabbagh -- All rights reserved.</copyright><lastBuildDate>Wed, 11 Nov 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://os-edu.github.io/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>社区发展规划</title><link>https://os-edu.github.io/posts/%E7%A4%BE%E5%8C%BA%E5%8F%91%E5%B1%95%E8%A7%84%E5%88%92/</link><pubDate>Wed, 11 Nov 2020 00:00:00 +0000</pubDate><author>wangfuzheng0814@foxmail.com (os-site)</author><guid>https://os-edu.github.io/posts/%E7%A4%BE%E5%8C%BA%E5%8F%91%E5%B1%95%E8%A7%84%E5%88%92/</guid><description>OS-Edu 起因 起初在准备ccf的csp认证考试，查阅了相关资料之后，发现并没有系统的讲解，或者说准备方法。其实说白了，也没啥需要准备的，就是刷题嘛，23333……但是既然是刷题，就应该是有方法有技巧的，不能盲目的乱刷，要不然丢了时间，效果还不太明显。
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on OS-EDU</title><link>https://os-edu.github.io/posts/</link><description>Recent content in Posts on OS-EDU</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Thu, 19 Nov 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://os-edu.github.io/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>B1001题解</title><link>https://os-edu.github.io/b1001/</link><pubDate>Thu, 19 Nov 2020 00:00:00 +0000</pubDate><guid>https://os-edu.github.io/b1001/</guid><description>B1001.害死人不偿命的(3 * n + 1)猜想 作者：AKA二夕
+一、题目详情 题目描述： 卡拉兹猜想：对于任何一个自然数n，如果它是偶数，那么把它一半砍掉；如果它是奇数，那么把(3 * n + 1)砍掉一半。 这样一直反复砍下去，最后一定在某一步得到 n = 1。卡拉兹在1950年的世界数学家大会上公布了这个猜想，据说当时耶鲁大 学师生齐动员，拼命想证明这个貌似很荒唐的命题，结果闹得学生们无心学业，一心只证(3 * n + 1)，以至于有人说这是一个 阴谋，卡拉兹是在蓄意延缓美国数学界与科研界的进展…… 此处并非要证明卡拉兹猜想，而是给定的任一不超过1000的正整数n，简单地数一下，需要多少步才能得到 n = 1？
+输入格式： 每个测试输入包含1个测试用例，即给出自然数n的值。
+输出格式： 输出从n计算到1需要的步数。
+输入样例： 3
+输出样例： 5
+二、题目分析 当时正读到题目的第一感觉就是，这是个什么玩意，稀里糊涂的，卡拉兹猜想 要证明这玩意嘛？？但让我们静下心来，再慢慢仔细阅读一遍，就会发现题干的内容都是唬人的。抽取题目的有效信息如下：
+对于任意的自然数n，这个n要么是偶数，要么是奇数，如果是偶数的话就变成它原来的一半`n = n / 2;` 否则的话是奇数，则`n = (3 * n + 1) / 2;` 如此反复循环，最终能得到`n = 1;` 。
+看吧，这样一来是不是很清晰了，那么如何判断一个自然数n，是偶数还是奇数呢，并且对其作出相应的处理，这不明显是一个if ... else ... 嘛；至于判断它的奇偶性呢，利用我们小学一年级学过的知识，偶数是2的倍数 ，所以判断条件是n % 2 == 0。</description></item><item><title>社区发展规划</title><link>https://os-edu.github.io/%E7%A4%BE%E5%8C%BA%E5%8F%91%E5%B1%95%E8%A7%84%E5%88%92/</link><pubDate>Wed, 11 Nov 2020 00:00:00 +0000</pubDate><guid>https://os-edu.github.io/%E7%A4%BE%E5%8C%BA%E5%8F%91%E5%B1%95%E8%A7%84%E5%88%92/</guid><description>OS-Edu 起因 起初在准备ccf的csp认证考试，查阅了相关资料之后，发现并没有系统的讲解，或者说准备方法。其实说白了，也没啥需要准备的，就是刷题嘛，23333……但是既然是刷题，就应该是有方法有技巧的，不能盲目的乱刷，要不然丢了时间，效果还不太明显。
 之前，有了半年的leetcode刷题经验，所以对于算法而言，也算刚入门了吧，哈哈哈哈。但是一开始对于准备csp认证而言，是毫无头绪的，不知从哪下手。在github上我们可以找到很多优秀的关于算法的项目以及相关的刷题项目，但这些项目面向的大众往往都是求职者，对于数据结构以及算法已经有了初步了解的人群，所选的题目也大多数来自于leetcode、牛客网等等，所以相对而言门槛较高。对于毫无经验的新手玩家来说，毫无疑问是一块硬骨头，似乎不怎么好下手。
 所以针对出现的以上现象，我们打算创建一个适合大学生刷题的项目，由于我们的小伙伴能力有限，不足之处，还望各路大神批评指正。
 项目 KO&amp;ndash;CSP 简介： 该仓库主要用于刷题记录，上传各组题目以及案例测试，也是我们创建的项目的起点吧。题目内容主要来源于胡凡老师所编写的《算法笔记》，在后续我们会根据收集到的题目慢慢补充，争取让项目越来越完善，适用于更多人群。
 项目需求： 掌握C\C++、Java、Python等至少一门主流的编程语言‘ 掌握基础的数据结构相关的内容，例如：数组、链表、栈、二叉树以及图等等； 拥有一定量的刷题经验优先。 仓库地址： https://github.com/OS-EDU/KO--CSP
 os-edu-site 简介： 项目的web页面，主要用于更新刷题的相关题解、与之有关的基础知识，从而使得更多人参与进来；以及项目的未来发展趋势等等。
 打算基于hugo实现项目的静态网页，本着简洁高效的原则，尽可能多的兼容更多内容。
-项目需求： 掌握HTML、CSS以及JavaScript等前端常用编程语言； 能够熟练使用hugo部署静态网页； 文案撰写、文章编辑； 网站开发和维护。 仓库地址： https://github.com/OS-EDU/os-edu-site
+项目需求： 掌握HTML、CSS以及JavaScript等前端常用编程语言； 能够熟练使用hugo部署静态网页； 文案撰写、文章编辑； 网站开发和维护。 仓库地址： https://github.com/OS-EDU/os-edu.github.io
 未来项目 待定，根据发展而定……
 志愿者 志愿者招募： 为了更好的推广开源，我们诚挚的邀请您加入志愿者行列，只要您：
 热情，大方，细心，有责任心 热爱开源，愿意为中国本土的开源发展贡献自已的一份力量 具有良好的团队合作意识 具备下述能力中的任何一条，或者您认为我们需要的能力： 解决网站模板的问题； 构建题库以及相关题解； 参与社区维护： 维护、编辑公众号文章 设计相关logo、推送图 发布相关平台文章 给出相关的建议。 志愿者福利： 首先，我们希望您是真的喜爱、热爱开源，愿意投身到改变世界的开源事业当中。
