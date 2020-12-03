@@ -1,4 +1,18 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>OS-EDU</title><link>https://os-edu.github.io/</link><description>Recent content on OS-EDU</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Thu, 19 Nov 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://os-edu.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>B1001题解</title><link>https://os-edu.github.io/b1001/</link><pubDate>Thu, 19 Nov 2020 00:00:00 +0000</pubDate><guid>https://os-edu.github.io/b1001/</guid><description>B1001.害死人不偿命的(3 * n + 1)猜想 作者：AKA二夕
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>OS-EDU</title><link>https://os-edu.github.io/</link><description>Recent content on OS-EDU</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Tue, 01 Dec 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://os-edu.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>B1046题解</title><link>https://os-edu.github.io/b1046/</link><pubDate>Tue, 01 Dec 2020 00:00:00 +0000</pubDate><guid>https://os-edu.github.io/b1046/</guid><description>B1046.划拳 作者：freedom3219 审核：AKA二夕
+一、题目详情 题目描述： 划拳是中国酒文化中的一个有趣的组成成分。酒桌上两个人划拳的方法为：每人口中喊出一个数字，同时用手比划出一个数字。如果谁比划出的数字正好等于两人喊出的数字之和，谁就赢了，输家自罚一杯酒。两人同赢或两人同输则继续下一轮，直到唯一的赢家出现。
+下面给出甲、乙两人的划拳记录，请统计他们最后分别喝了多少杯酒。
+输入格式： 第一行先给出一个正整数N(N &amp;lt;= 100)；随后N行每行给出一轮划拳的记录，格式为：甲喊 甲划 乙喊 乙划
+其中“喊”是喊出的数字，“划”是划出的数字。均为不超过100的正整数（两只手一起划）。
+输出格式： 在一行中先后输出甲、乙两人喝酒的杯数，其间以一个空格间隔。
+输入样例： 5 8 10 9 12 5 10 5 10 3 8 5 12 12 18 1 13 4 16 12 15 输出样例： 1 2
+二、题目分析 下面我们来仔细阅读本题，抽取题目的有效信息如下：
+每人口中喊出一个数字，同时用手比划出一个数字。如果谁比划出的数字正好等于两人喊出的数字之和，谁就赢了，输家自罚一杯酒。分析得出:甲划+乙划=甲喊，则甲赢；甲划+乙划=乙喊，则乙赢；甲划+乙划=甲喊=乙喊，则此局为平局；由此看出：甲赢此局，乙自罚一杯，否则相反；平局则继续。
+现在再来一看，此题就很清晰了。先给出一个正整数N(N &amp;lt;= 100)，随后N行每行给出一轮划拳的记录，格式为：甲喊 甲划 乙喊 乙划；所以这里我们可以用一个for()循环来输入：甲喊 甲划 乙喊 乙划这四个整数；在for()循环中的限制条件为i&amp;lt;N就能解决划拳的次数问题。
+接着我们可以用if()…else if()…判断语句来判断出甲乙两人中是谁获得本次划拳的赢家。
+但还有一点需要注意，就是本题的真正问题：统计甲，乙各喝了多少杯酒。所以，甲赢一局后，我们需要在给统计乙的杯酒数上+1；乙赢则相反；
+最后就是要注意输出的格式，做题一定要严谨，在一行中先后输出甲、乙两人喝酒的杯数，其间以一个空格间隔。
+三、代码实现 Java语言实现如下：
+public class B1046 { public static void main(String[] args) { B1046Solutions b1046Solutions = new B1046Solutions(); b1046Solutions.</description></item><item><title>B1001题解</title><link>https://os-edu.github.io/b1001/</link><pubDate>Thu, 19 Nov 2020 00:00:00 +0000</pubDate><guid>https://os-edu.github.io/b1001/</guid><description>B1001.害死人不偿命的(3 * n + 1)猜想 作者：AKA二夕
 一、题目详情 题目描述： 卡拉兹猜想：对于任何一个自然数n，如果它是偶数，那么把它一半砍掉；如果它是奇数，那么把(3 * n + 1)砍掉一半。 这样一直反复砍下去，最后一定在某一步得到 n = 1。卡拉兹在1950年的世界数学家大会上公布了这个猜想，据说当时耶鲁大 学师生齐动员，拼命想证明这个貌似很荒唐的命题，结果闹得学生们无心学业，一心只证(3 * n + 1)，以至于有人说这是一个 阴谋，卡拉兹是在蓄意延缓美国数学界与科研界的进展…… 此处并非要证明卡拉兹猜想，而是给定的任一不超过1000的正整数n，简单地数一下，需要多少步才能得到 n = 1？
 输入格式： 每个测试输入包含1个测试用例，即给出自然数n的值。
 输出格式： 输出从n计算到1需要的步数。
