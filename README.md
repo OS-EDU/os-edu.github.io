@@ -6,7 +6,7 @@ The web site for host the pages of os-edu, normally we publish a WeChat public a
 1. Run `git submodule init`
 2. Run `git submodule update`
 3. Run `hugo server` in the root directory
-4. Access the site with "http://localhost:1313/alc-site/"
+4. Access the site with "http://localhost:1313/os-edu.github.io/"
 
 ## How to contribute new content to the site
 0. Clicking the [fork](https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/about-forks) button on the project page, then check out the os-edu from your forked repo.
