@@ -1,4 +1,13 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on OS-EDU</title><link>https://os-edu.github.io/posts/</link><description>Recent content in Posts on OS-EDU</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Sun, 13 Dec 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://os-edu.github.io/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>PAT-B1008.数组元素循环右移问题</title><link>https://os-edu.github.io/pat_b1008/</link><pubDate>Sun, 13 Dec 2020 00:00:00 +0000</pubDate><guid>https://os-edu.github.io/pat_b1008/</guid><description>B1001.数组元素循环右移问题 作者：AKA二夕
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on OS-EDU</title><link>https://os-edu.github.io/posts/</link><description>Recent content in Posts on OS-EDU</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Sat, 02 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://os-edu.github.io/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>PAT_B1012.数字分类</title><link>https://os-edu.github.io/pat_b1012/</link><pubDate>Sat, 02 Jan 2021 00:00:00 +0000</pubDate><guid>https://os-edu.github.io/pat_b1012/</guid><description>PAT_B1012.数字分类 作者：AKA二夕
+一、题目详情 题目描述： 给定一系列正整数，请按照要求对数字进行分类，并输出以下五类数字：
+A1 = 能被5整除的数字中所有偶数的和；
+A2 = 将被5除后余1的数字按给出的顺序进行交错求和，即计算出n1 - n2 + n3 -n4 ……；
+A3 = 被5除后余2的数字的个数；
+A4 = 被5除后余3的数字的平均数，精确到小数点后一位；
+A5 = 被5除后余4的数字中最大数字。
+输入格式： 每个输入包含一个测试用例。每个测试用例先给出一个不超过1000的正整数N，随后给出N个不超过1000的待分类的正整数。数字间以空格分隔。
+输出格式： 对给定的N个正整数，按题目要求计算A1~A5并在一行中顺序输出。数字间以空格分隔，但末行不得有多余的空格。 若其中某一类数字不存在，则在相应位置输出&amp;quot;N&amp;rdquo;。
+输入样例1： 13 1 2 3 4 5 6 7 8 9 10 20 16 18 输出样例1： 30 11 2 9.7 9 输入样例2： 8 1 2 4 5 6 7 9 16 输出样例2： N 11 2 N 9 二、题目分析 定义基本变量如下：</description></item><item><title>PAT-B1008.数组元素循环右移问题</title><link>https://os-edu.github.io/pat_b1008/</link><pubDate>Sun, 13 Dec 2020 00:00:00 +0000</pubDate><guid>https://os-edu.github.io/pat_b1008/</guid><description>B1001.数组元素循环右移问题 作者：AKA二夕
 一、题目详情 题目描述： 一个数组A中存有N（&amp;gt;0）个整数，在不允许使用另外数组的前提下，将每个整数循环向右移M（≥0）个位置，即将A中的数据由（A0 A1 ⋯ AN−1 ）变换为（AN−M ⋯ AN−1 A0 A1⋯AN−M−1*）（最后* M*个数循环移至最前面的* *M* 个位置）。如果需要考虑程序移动数据的次数尽量少，要如何设计移动的方法？
 输入格式: 每个输入包含一个测试用例，第1行输入N（1≤N≤100）和M（≥0）；第2行输入N个整数，之间用空格分隔。
 输出格式: 在一行中输出循环右移M位以后的整数序列，之间用空格分隔，序列结尾不能有多余空格。
