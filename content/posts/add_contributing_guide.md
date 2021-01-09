@@ -6,6 +6,9 @@ date: 2021-01-09
 
 # 贡献指南
 
+> 作者:Plato-W
+
+
 前段时间一直有小伙伴在询问具体该如何参与项目中来，所以在借鉴了一些开源项目指南的基础上，编写了本文，如果感觉有不足之处，欢迎大家来适当补充。
 
 这篇贡献指南会指导你如何为 `KO——CSP` 贡献一份自己的力量，请在要提 `Issue` 或者 `Pull request` 之前花几分钟来阅读一遍这篇指南。
@@ -116,7 +119,7 @@ $ git push -f origin your-branch-name
      $ git push origin --delete branch-name
      ```
 
--    切回到 `master` 分支:
+-    切回到 `main` 分支:
 
      ```shell
      $ git checkout master -f
@@ -128,7 +131,7 @@ $ git push -f origin your-branch-name
      $ git branch -D my-fix-branch
      ```
 
--    保持本地 `master` 分支与上游分支同步:
+-    保持本地 `main` 分支与上游分支同步:
 
      ```shell
      $ git pull --ff upstream main
