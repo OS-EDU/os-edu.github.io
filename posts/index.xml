@@ -1,4 +1,12 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on OS-EDU</title><link>https://os-edu.github.io/posts/</link><description>Recent content in Posts on OS-EDU</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Sat, 09 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://os-edu.github.io/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>参与贡献指南</title><link>https://os-edu.github.io/add_contributing_guide/</link><pubDate>Sat, 09 Jan 2021 00:00:00 +0000</pubDate><guid>https://os-edu.github.io/add_contributing_guide/</guid><description>贡献指南 作者：Plato-W
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on OS-EDU</title><link>https://os-edu.github.io/posts/</link><description>Recent content in Posts on OS-EDU</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Mon, 18 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://os-edu.github.io/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>PAT_B1016.部分 A + B</title><link>https://os-edu.github.io/pat-b1016/</link><pubDate>Mon, 18 Jan 2021 00:00:00 +0000</pubDate><guid>https://os-edu.github.io/pat-b1016/</guid><description>PAT_B1016.部分 A + B 作者：freedom3219
+审核：AKA二夕
+一、题目详情 题目描述： 正整数A的 “D~A~ （为1位整数）部分” 定义为由A中所有D~A~ 组成的新整数P~A~ 。例如：给定A = 3862767， D~A~ = 6，则A的“6的部分”P~A~ 是66，因为A中有2个6。
+输入格式： 在一行中依次输入A、D~A~ 、B、D~B~ ，中间以空格分隔，其中 A &amp;gt; 0, B &amp;lt; 10^10^。
+输出格式： 在一行中输出P~A~ + P~B~ 的值。
+输入样例1： 3862767 6 13530293 3 输出样例1： 399
+输入样例2： 3862767 1 13530293 8 输出样例2： 0
+二、题目分析 当我们看到这一题的时候，第一印象应该是：“这一题的题目好短，应该很简单”。哈哈，没错，这一题正如你想的一样，的确是很简单的。下面我们来仔细阅读本题，抽取题目的有效信息如下：
+正整数A的 “D~A~ （为1位整数）部分” 定义为由A中所有D~A~ 组成的新整数P~A~ 。例如：给定A = 3862767， D~A~ = 6，则A的“6的部分”P~A~ 是66，因为A中有2个6。</description></item><item><title>参与贡献指南</title><link>https://os-edu.github.io/add_contributing_guide/</link><pubDate>Sat, 09 Jan 2021 00:00:00 +0000</pubDate><guid>https://os-edu.github.io/add_contributing_guide/</guid><description>贡献指南 作者：Plato-W
 审核：AKA二夕
 前段时间一直有小伙伴在询问具体该如何参与项目中来，所以在借鉴了一些开源项目指南的基础上，编写了本文，如果感觉有不足之处，欢迎大家来适当补充。
 这篇贡献指南会指导你如何为 KO——CSP 贡献一份自己的力量，请在要提 Issue 或者 Pull request 之前花几分钟来阅读一遍这篇指南。
