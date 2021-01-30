@@ -1,0 +1,56 @@
+title = "OS-EDU"
+baseURL = "https://os-edu.github.io/"
+languageCode = "en-us"
+theme = "gohugo-theme-ananke"
+
+MetaDataFormat = "yaml"
+DefaultContentLanguage = "cn"
+SectionPagesMenu = "main"
+Paginate = 3 # this is set low for demonstrating with dummy content. Set to a higher number
+googleAnalytics = ""
+enableRobotsTXT = true
+
+[sitemap]
+  changefreq = "monthly"
+  priority = 0.5
+  filename = "sitemap.xml"
+
+[params]
+  favicon = ""
+  description = "I need. Maybe."
+  facebook = ""
+  twitter = "https://twitter.com/GoHugoIO"
+  instagram = ""
+  youtube = ""
+  github = "https://github.com/Galaxy-Hitchhiker"
+  gitlab = ""
+  linkedin = ""
+  mastodon = ""
+  slack = ""
+  stackoverflow = ""
+
+[menu]
+    ## 菜单栏
+ #   [[menu.main]]
+ #   url = "/"
+ #   name = "首页"
+ #    weight = 1
+ # pre = "internal"
+ # post = "home"
+    [[menu.main]]
+        weight = 6
+        identifier = "theme-switcher"
+    [[menu.main]]
+        weight = 7
+        identifier = "lang-switcher"
+    [[menu.main]]
+        weight = 8
+        identifier = "search"
+        post = "search"
+
+
+  # choose a background color from any on this page: http://tachyons.io/docs/themes/skins/ and preface it with "bg-"
+
+  background_color_class = "bg-black"
+  featured_image = ""
+  recent_posts_number = 2
