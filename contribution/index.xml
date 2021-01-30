@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Contributions on OS-EDU</title><link>https://os-edu.github.io/contribution/</link><description>Recent content in Contributions on OS-EDU</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Sat, 09 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://os-edu.github.io/contribution/index.xml" rel="self" type="application/rss+xml"/><item><title>参与贡献指南</title><link>https://os-edu.github.io/contribution/add_contributing_guide/</link><pubDate>Sat, 09 Jan 2021 00:00:00 +0000</pubDate><guid>https://os-edu.github.io/contribution/add_contributing_guide/</guid><description>贡献指南 作者：Plato-W
+审核：AKA二夕
+前段时间一直有小伙伴在询问具体该如何参与项目中来，所以在借鉴了一些开源项目指南的基础上，编写了本文，如果感觉有不足之处，欢迎大家来适当补充。
+这篇贡献指南会指导你如何为 KO——CSP 贡献一份自己的力量，请在要提 Issue 或者 Pull request 之前花几分钟来阅读一遍这篇指南。
+提交 Issue 提交 Pull Request 提交 issue 有任何疑问，欢迎提交 Issue。提交 issue 之前:
+避免提交重复的 issue，在提交之前搜索现有的 issue。 确定 issue 的类型，并在标题或内容中标明。如 add questions, bug, documentation, discussion, help wanted等。查看所有标签。 提交 Pull Request 如果你准备提交 Pull Request ，可参考以下流程：
+1. 认领 issue 所有的题目都会建立一个对应的issue，可以选择在 Issue 列表 中挑选任务，然后在该 issue 下回复一下自己简单的解题思路，表明你将认领该 issue，如果发现issue已被认领或者closed，但是还有不同的解法，可以自己new issue，issue的标题要表明对应的题目编号。
+可以在 Issue 流程相关中找到更多与 Issue 流程相关的信息。
+2. 克隆仓库 访问 KO&amp;ndash;CSP 仓库的主页，并 Fork 到自己的账号下。</description></item></channel></rss>

@@ -1,10 +1,11 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>OS-EDU</title><link>https://os-edu.github.io/</link><description>Recent content on OS-EDU</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Thu, 28 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://os-edu.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>PAT-B1018.锤子剪刀布</title><link>https://os-edu.github.io/pat_b1018/</link><pubDate>Thu, 28 Jan 2021 00:00:00 +0000</pubDate><guid>https://os-edu.github.io/pat_b1018/</guid><description>PAT-B1018.锤子剪刀布 作者：AKA二夕
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>OS-EDU</title><link>https://os-edu.github.io/</link><description>Recent content on OS-EDU</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Thu, 28 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://os-edu.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>PAT-B1018.锤子剪刀布</title><link>https://os-edu.github.io/posts/pat_b1018/</link><pubDate>Thu, 28 Jan 2021 00:00:00 +0000</pubDate><guid>https://os-edu.github.io/posts/pat_b1018/</guid><description>PAT-B1018.锤子剪刀布 作者：AKA二夕
 一、题目详情 题目描述： 大家应该都会玩“锤子剪刀布”的游戏：两人同时给出手势，胜负规则如下：剪刀胜布、锤子胜剪刀、布胜锤子。
 现给出两人的交锋记录，请统计双方的胜、平、负次数，并给出双方分别出什么手势的胜算最大。
 输入格式： 第一行给出正整数N（&amp;lt;= 10^5），即双方交锋的次数。随后 N 行，每行给出一次交锋的信息，即甲、乙双方同时给出的手势。C 代表“锤子”、J 代表“剪刀”、B 代表“布”，第一个字母代表甲方，第二个字母代表乙方。中间有一个空格。
 输出格式： 第一、二行分别给出甲、乙的胜、平、负次数，数字间以一个空格分隔。第三行给出两个字母，分别代表甲、乙获胜次数最多的手势，中间有一个空格。如果解不唯一，则输出按字典顺序最小的解。
 输入样例： 10 C J J B C B B B B C C C C B J B B C J J 输出样例： 5 3 2 2 3 5 B B 二、题目分析 下面我们来简单分析一下题目哈，这个游戏规则想必大家都熟悉，也就是我们小学一年级的时候所学过的 &amp;ldquo;锤子剪刀布&amp;rdquo;，所以我们就具体来看看题目要求。
-1、提取题干信息 先看看 输入格式 的要求：看来是 PAT 的老规矩啊，通常第一行都是给出一个 N 表示测试案例的次数，然后使用一个循环来处理后面的数据。也就是正常输入 B C J ；再来看看 输出格式 的要求：要输出的条件有 ：甲乙的胜平负次数，还有甲乙获胜最多的手势，如果解不唯一，则输出按字典顺序最小的解。</description></item><item><title>PAT_B1016.部分 A + B</title><link>https://os-edu.github.io/pat-b1016/</link><pubDate>Mon, 18 Jan 2021 00:00:00 +0000</pubDate><guid>https://os-edu.github.io/pat-b1016/</guid><description>PAT_B1016.部分 A + B 作者：freedom3219
+1、提取题干信息 先看看 输入格式 的要求：看来是 PAT 的老规矩啊，通常第一行都是给出一个 N 表示测试案例的次数，然后使用一个循环来处理后面的数据。也就是正常输入 B C J ；再来看看 输出格式 的要求：要输出的条件有 ：甲乙的胜平负次数，还有甲乙获胜最多的手势，如果解不唯一，则输出按字典顺序最小的解。
+2、思路分析 ①定义所需变量 最后的输出要求中提到，要按照字典顺序最小的解输出。我们看一下 &amp;lsquo;B&amp;rsquo; —— 布、&amp;lsquo;C&amp;rsquo; —— 锤子，&amp;lsquo;J&amp;rsquo; —— 剪刀，刚好符合要求，而且又是循环相克的顺序，即 B胜C、C胜J、J胜B，因此我们可以使用一个map数组将 &amp;lsquo;B&amp;rsquo; &amp;lsquo;C&amp;rsquo; &amp;lsquo;J&amp;rsquo; 存入进去，即map[0] = 'B'; map[1] = 'C'; map[2] = 'J'; 同时再写一个change() 函数用于将 &amp;lsquo;B&amp;rsquo; &amp;lsquo;C&amp;rsquo; &amp;lsquo;J&amp;rsquo; 转化成对应的 0 1 2。</description></item><item><title>PAT_B1016.部分 A + B</title><link>https://os-edu.github.io/posts/pat-b1016/</link><pubDate>Mon, 18 Jan 2021 00:00:00 +0000</pubDate><guid>https://os-edu.github.io/posts/pat-b1016/</guid><description>PAT_B1016.部分 A + B 作者：freedom3219
 审核：AKA二夕
 一、题目详情 题目描述： 正整数A的 “D~A~ （为1位整数）部分” 定义为由A中所有D~A~ 组成的新整数P~A~ 。例如：给定A = 3862767， D~A~ = 6，则A的“6的部分”P~A~ 是66，因为A中有2个6。
 输入格式： 在一行中依次输入A、D~A~ 、B、D~B~ ，中间以空格分隔，其中 A &amp;gt; 0, B &amp;lt; 10^10^。
@@ -12,7 +13,7 @@
 输入样例1： 3862767 6 13530293 3 输出样例1： 399
 输入样例2： 3862767 1 13530293 8 输出样例2： 0
 二、题目分析 当我们看到这一题的时候，第一印象应该是：“这一题的题目好短，应该很简单”。哈哈，没错，这一题正如你想的一样，的确是很简单的。下面我们来仔细阅读本题，抽取题目的有效信息如下：
-正整数A的 “D~A~ （为1位整数）部分” 定义为由A中所有D~A~ 组成的新整数P~A~ 。例如：给定A = 3862767， D~A~ = 6，则A的“6的部分”P~A~ 是66，因为A中有2个6。</description></item><item><title>参与贡献指南</title><link>https://os-edu.github.io/add_contributing_guide/</link><pubDate>Sat, 09 Jan 2021 00:00:00 +0000</pubDate><guid>https://os-edu.github.io/add_contributing_guide/</guid><description>贡献指南 作者：Plato-W
+正整数A的 “D~A~ （为1位整数）部分” 定义为由A中所有D~A~ 组成的新整数P~A~ 。例如：给定A = 3862767， D~A~ = 6，则A的“6的部分”P~A~ 是66，因为A中有2个6。</description></item><item><title>参与贡献指南</title><link>https://os-edu.github.io/contribution/add_contributing_guide/</link><pubDate>Sat, 09 Jan 2021 00:00:00 +0000</pubDate><guid>https://os-edu.github.io/contribution/add_contributing_guide/</guid><description>贡献指南 作者：Plato-W
 审核：AKA二夕
 前段时间一直有小伙伴在询问具体该如何参与项目中来，所以在借鉴了一些开源项目指南的基础上，编写了本文，如果感觉有不足之处，欢迎大家来适当补充。
 这篇贡献指南会指导你如何为 KO——CSP 贡献一份自己的力量，请在要提 Issue 或者 Pull request 之前花几分钟来阅读一遍这篇指南。
@@ -20,7 +21,7 @@
 避免提交重复的 issue，在提交之前搜索现有的 issue。 确定 issue 的类型，并在标题或内容中标明。如 add questions, bug, documentation, discussion, help wanted等。查看所有标签。 提交 Pull Request 如果你准备提交 Pull Request ，可参考以下流程：
 1. 认领 issue 所有的题目都会建立一个对应的issue，可以选择在 Issue 列表 中挑选任务，然后在该 issue 下回复一下自己简单的解题思路，表明你将认领该 issue，如果发现issue已被认领或者closed，但是还有不同的解法，可以自己new issue，issue的标题要表明对应的题目编号。
 可以在 Issue 流程相关中找到更多与 Issue 流程相关的信息。
-2. 克隆仓库 访问 KO&amp;ndash;CSP 仓库的主页，并 Fork 到自己的账号下。</description></item><item><title>PAT_B1012.数字分类</title><link>https://os-edu.github.io/pat_b1012/</link><pubDate>Sat, 02 Jan 2021 00:00:00 +0000</pubDate><guid>https://os-edu.github.io/pat_b1012/</guid><description>PAT_B1012.数字分类 作者：AKA二夕
+2. 克隆仓库 访问 KO&amp;ndash;CSP 仓库的主页，并 Fork 到自己的账号下。</description></item><item><title>PAT_B1012.数字分类</title><link>https://os-edu.github.io/posts/pat_b1012/</link><pubDate>Sat, 02 Jan 2021 00:00:00 +0000</pubDate><guid>https://os-edu.github.io/posts/pat_b1012/</guid><description>PAT_B1012.数字分类 作者：AKA二夕
 一、题目详情 题目描述： 给定一系列正整数，请按照要求对数字进行分类，并输出以下五类数字：
 A1 = 能被5整除的数字中所有偶数的和；
 A2 = 将被5除后余1的数字按给出的顺序进行交错求和，即计算出n1 - n2 + n3 -n4 ……；
@@ -29,12 +30,12 @@ A4 = 被5除后余3的数字的平均数，精确到小数点后一位；
 A5 = 被5除后余4的数字中最大数字。
 输入格式： 每个输入包含一个测试用例。每个测试用例先给出一个不超过1000的正整数N，随后给出N个不超过1000的待分类的正整数。数字间以空格分隔。
 输出格式： 对给定的N个正整数，按题目要求计算A1~A5并在一行中顺序输出。数字间以空格分隔，但末行不得有多余的空格。 若其中某一类数字不存在，则在相应位置输出&amp;quot;N&amp;rdquo;。
-输入样例1： 13 1 2 3 4 5 6 7 8 9 10 20 16 18 输出样例1： 30 11 2 9.7 9 输入样例2： 8 1 2 4 5 6 7 9 16 输出样例2： N 11 2 N 9 二、题目分析 定义基本变量如下：</description></item><item><title>PAT-B1008.数组元素循环右移问题</title><link>https://os-edu.github.io/pat_b1008/</link><pubDate>Sun, 13 Dec 2020 00:00:00 +0000</pubDate><guid>https://os-edu.github.io/pat_b1008/</guid><description>B1008.数组元素循环右移问题 作者：AKA二夕
+输入样例1： 13 1 2 3 4 5 6 7 8 9 10 20 16 18 输出样例1： 30 11 2 9.7 9 输入样例2： 8 1 2 4 5 6 7 9 16 输出样例2： N 11 2 N 9 二、题目分析 定义基本变量如下：</description></item><item><title>PAT-B1008.数组元素循环右移问题</title><link>https://os-edu.github.io/posts/pat_b1008/</link><pubDate>Sun, 13 Dec 2020 00:00:00 +0000</pubDate><guid>https://os-edu.github.io/posts/pat_b1008/</guid><description>B1008.数组元素循环右移问题 作者：AKA二夕
 一、题目详情 题目描述： 一个数组A中存有N（&amp;gt;0）个整数，在不允许使用另外数组的前提下，将每个整数循环向右移M（≥0）个位置，即将A中的数据由（A0 A1 ⋯ AN−1 ）变换为（AN−M ⋯ AN−1 A0 A1⋯AN−M−1*）（最后* M*个数循环移至最前面的* *M* 个位置）。如果需要考虑程序移动数据的次数尽量少，要如何设计移动的方法？
 输入格式: 每个输入包含一个测试用例，第1行输入N（1≤N≤100）和M（≥0）；第2行输入N个整数，之间用空格分隔。
 输出格式: 在一行中输出循环右移M位以后的整数序列，之间用空格分隔，序列结尾不能有多余空格。
 输入样例: 6 2 1 2 3 4 5 6 输出样例: 5 6 1 2 3 4 二、题目分析 由题目信息可知，需要我们做的是根据所输入的数字，移动数组中的元素到指定位置。但是吧，它却增加了一堆限制条件。比如：不允许使用另外数组的情况下、又要考虑移动元素的次数最少 ， 完成该操作。这样一来是不是有点棘手呢。。。。但是我们再仔细审题，可以得出 实际上只测试循环右移之后得到的结果而不管过程。所以对于此类题目，我们其实不用管那么多限制，直接按照输出和输出的要求完成操作即可。
-另外还有一点需要注意的是，题目中并没有给出 M 的最大值，因此我们有可能会误判 M &amp;lt; N ，所以需要在输入 N 和 M 后令 M = M % N; 这样一来就可以保证 M &amp;lt; N 了，使后面的操作更简便。这样方法也是我在以后解决相关问题的时候经常会使用到的 取余思想 ，其依据是：对一个长度为 N 的序列，右移 N 位之后的序列和当前序列相同。</description></item><item><title>B1046题解</title><link>https://os-edu.github.io/b1046/</link><pubDate>Tue, 01 Dec 2020 00:00:00 +0000</pubDate><guid>https://os-edu.github.io/b1046/</guid><description>B1046.划拳 作者：freedom3219
+另外还有一点需要注意的是，题目中并没有给出 M 的最大值，因此我们有可能会误判 M &amp;lt; N ，所以需要在输入 N 和 M 后令 M = M % N; 这样一来就可以保证 M &amp;lt; N 了，使后面的操作更简便。这样方法也是我在以后解决相关问题的时候经常会使用到的 取余思想 ，其依据是：对一个长度为 N 的序列，右移 N 位之后的序列和当前序列相同。</description></item><item><title>B1046题解</title><link>https://os-edu.github.io/posts/b1046/</link><pubDate>Tue, 01 Dec 2020 00:00:00 +0000</pubDate><guid>https://os-edu.github.io/posts/b1046/</guid><description>B1046.划拳 作者：freedom3219
 审核：AKA二夕
 一、题目详情 题目描述： 划拳是中国酒文化中的一个有趣的组成成分。酒桌上两个人划拳的方法为：每人口中喊出一个数字，同时用手比划出一个数字。如果谁比划出的数字正好等于两人喊出的数字之和，谁就赢了，输家自罚一杯酒。两人同赢或两人同输则继续下一轮，直到唯一的赢家出现。
 下面给出甲、乙两人的划拳记录，请统计他们最后分别喝了多少杯酒。
@@ -44,12 +45,12 @@ A5 = 被5除后余4的数字中最大数字。
 输入样例： 5 8 10 9 12 5 10 5 10 3 8 5 12 12 18 1 13 4 16 12 15 输出样例： 1 2
 二、题目分析 下面我们来仔细阅读本题，抽取题目的有效信息如下：
 每人口中喊出一个数字，同时用手比划出一个数字。如果谁比划出的数字正好等于两人喊出的数字之和，谁就赢了，输家自罚一杯酒。分析得出:甲划+乙划=甲喊，则甲赢；甲划+乙划=乙喊，则乙赢；甲划+乙划=甲喊=乙喊，则此局为平局；由此看出：甲赢此局，乙自罚一杯，否则相反；平局则继续。
-现在再来一看，此题就很清晰了。我们可以创建变量 failA 、failB 分别记录甲乙两人输的次数，初始值均为0,。输入甲乙喊的数字 a1 、 b1 以及甲乙划的数字 a2 、b2 ， 如果 a1 + b1 == a2 且 a1 + b1 !</description></item><item><title>B1001题解</title><link>https://os-edu.github.io/b1001/</link><pubDate>Thu, 19 Nov 2020 00:00:00 +0000</pubDate><guid>https://os-edu.github.io/b1001/</guid><description>B1001.害死人不偿命的(3 * n + 1)猜想 作者：AKA二夕
+现在再来一看，此题就很清晰了。我们可以创建变量 failA 、failB 分别记录甲乙两人输的次数，初始值均为0,。输入甲乙喊的数字 a1 、 b1 以及甲乙划的数字 a2 、b2 ， 如果 a1 + b1 == a2 且 a1 + b1 !</description></item><item><title>B1001题解</title><link>https://os-edu.github.io/posts/b1001/</link><pubDate>Thu, 19 Nov 2020 00:00:00 +0000</pubDate><guid>https://os-edu.github.io/posts/b1001/</guid><description>B1001.害死人不偿命的(3 * n + 1)猜想 作者：AKA二夕
 一、题目详情 题目描述： 卡拉兹猜想：对于任何一个自然数n，如果它是偶数，那么把它一半砍掉；如果它是奇数，那么把(3 * n + 1)砍掉一半。 这样一直反复砍下去，最后一定在某一步得到 n = 1。卡拉兹在1950年的世界数学家大会上公布了这个猜想，据说当时耶鲁大 学师生齐动员，拼命想证明这个貌似很荒唐的命题，结果闹得学生们无心学业，一心只证(3 * n + 1)，以至于有人说这是一个 阴谋，卡拉兹是在蓄意延缓美国数学界与科研界的进展…… 此处并非要证明卡拉兹猜想，而是给定的任一不超过1000的正整数n，简单地数一下，需要多少步才能得到 n = 1？
 输入格式： 每个测试输入包含1个测试用例，即给出自然数n的值。
 输出格式： 输出从n计算到1需要的步数。
 输入样例： 3 输出样例： 5 二、题目分析 当时正读到题目的第一感觉就是，这是个什么玩意，稀里糊涂的，卡拉兹猜想 要证明这玩意嘛？？但让我们静下心来，再慢慢仔细阅读一遍，就会发现题干的内容都是唬人的。抽取题目的有效信息如下：
-对于任意的自然数n，这个n要么是偶数，要么是奇数，如果是偶数的话就变成它原来的一半`n = n / 2;` 否则的话是奇数，则`n = (3 * n + 1) / 2;` 如此反复循环，最终能得到`n = 1;` 。 看吧，这样一来是不是很清晰了，那么如何判断一个自然数n，是偶数还是奇数呢，并且对其作出相应的处理，这不明显是一个if ... else ... 嘛；至于判断它的奇偶性呢，利用我们小学一年级学过的知识，偶数是2的倍数 ，所以判断条件是n % 2 == 0。</description></item><item><title>社区发展规划</title><link>https://os-edu.github.io/%E7%A4%BE%E5%8C%BA%E5%8F%91%E5%B1%95%E8%A7%84%E5%88%92/</link><pubDate>Wed, 11 Nov 2020 00:00:00 +0000</pubDate><guid>https://os-edu.github.io/%E7%A4%BE%E5%8C%BA%E5%8F%91%E5%B1%95%E8%A7%84%E5%88%92/</guid><description>OS-Edu 起因 起初在准备ccf的csp认证考试，查阅了相关资料之后，发现并没有系统的讲解，或者说准备方法。其实说白了，也没啥需要准备的，就是刷题嘛，23333……但是既然是刷题，就应该是有方法有技巧的，不能盲目的乱刷，要不然丢了时间，效果还不太明显。
+对于任意的自然数n，这个n要么是偶数，要么是奇数，如果是偶数的话就变成它原来的一半`n = n / 2;` 否则的话是奇数，则`n = (3 * n + 1) / 2;` 如此反复循环，最终能得到`n = 1;` 。 看吧，这样一来是不是很清晰了，那么如何判断一个自然数n，是偶数还是奇数呢，并且对其作出相应的处理，这不明显是一个if ... else ... 嘛；至于判断它的奇偶性呢，利用我们小学一年级学过的知识，偶数是2的倍数 ，所以判断条件是n % 2 == 0。</description></item><item><title>社区发展规划</title><link>https://os-edu.github.io/posts/%E7%A4%BE%E5%8C%BA%E5%8F%91%E5%B1%95%E8%A7%84%E5%88%92/</link><pubDate>Wed, 11 Nov 2020 00:00:00 +0000</pubDate><guid>https://os-edu.github.io/posts/%E7%A4%BE%E5%8C%BA%E5%8F%91%E5%B1%95%E8%A7%84%E5%88%92/</guid><description>OS-Edu 起因 起初在准备ccf的csp认证考试，查阅了相关资料之后，发现并没有系统的讲解，或者说准备方法。其实说白了，也没啥需要准备的，就是刷题嘛，23333……但是既然是刷题，就应该是有方法有技巧的，不能盲目的乱刷，要不然丢了时间，效果还不太明显。
 之前，有了半年的leetcode刷题经验，所以对于算法而言，也算刚入门了吧，哈哈哈哈。但是一开始对于准备csp认证而言，是毫无头绪的，不知从哪下手。在github上我们可以找到很多优秀的关于算法的项目以及相关的刷题项目，但这些项目面向的大众往往都是求职者，对于数据结构以及算法已经有了初步了解的人群，所选的题目也大多数来自于leetcode、牛客网等等，所以相对而言门槛较高。对于毫无经验的新手玩家来说，毫无疑问是一块硬骨头，似乎不怎么好下手。
 所以针对出现的以上现象，我们打算创建一个适合大学生刷题的项目，由于我们的小伙伴能力有限，不足之处，还望各路大神批评指正。
 项目 KO&amp;ndash;CSP 简介： 该仓库主要用于刷题记录，上传各组题目以及案例测试，也是我们创建的项目的起点吧。题目内容主要来源于胡凡老师所编写的《算法笔记》，在后续我们会根据收集到的题目慢慢补充，争取让项目越来越完善，适用于更多人群。
@@ -61,7 +62,7 @@ os-edu-site 简介： 项目的web页面，主要用于更新刷题的相关题�
 志愿者 志愿者招募： 为了更好的推广开源，我们诚挚的邀请您加入志愿者行列，只要您：
 热情，大方，细心，有责任心 热爱开源，愿意为中国本土的开源发展贡献自已的一份力量 具有良好的团队合作意识 具备下述能力中的任何一条，或者您认为我们需要的能力： 解决网站模板的问题； 构建题库以及相关题解； 参与社区维护： 维护、编辑公众号文章 设计相关logo、推送图 发布相关平台文章 给出相关的建议。 志愿者福利： 首先，我们希望您是真的喜爱、热爱开源，愿意投身到改变世界的开源事业当中。
 其次，通过参与 项目的志愿活动，您可以：
-学习开源知识，拓展视野 提升刷题能力 掌握开源项目的运作方式，深入了解开源文化 联系邮箱：wangfuzheng0814@foxmail.com</description></item><item><title/><link>https://os-edu.github.io/pat_b1011/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://os-edu.github.io/pat_b1011/</guid><description>PAT-B1011 :A + B 和 C 作者：DHY2020 AKA二夕
+学习开源知识，拓展视野 提升刷题能力 掌握开源项目的运作方式，深入了解开源文化 联系邮箱：wangfuzheng0814@foxmail.com</description></item><item><title/><link>https://os-edu.github.io/posts/pat_b1011/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://os-edu.github.io/posts/pat_b1011/</guid><description>PAT-B1011 :A + B 和 C 作者：DHY2020 AKA二夕
 审核：AKA二夕
 一、题目描述： 给定区间[-2^31, 2^31]内的三个正整数A、B和C，请判断 A + B 是否大于 C。
 输入格式： 第一行给出正整数T（T &amp;lt;= 10），即测试用例的个数。随后给出T组测试用例，每组占一行，顺序给出A、B和C。整数间以空格分隔。
