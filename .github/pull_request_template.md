@@ -3,7 +3,7 @@
 
 当前内容来自 PR 模版
 
-* **翻译指南：** https://os-edu.github.io/contribution/add_contributing_guide/
+* **贡献指南：** https://os-edu.github.io/contribution/add_contributing_guide/
 
      
 
