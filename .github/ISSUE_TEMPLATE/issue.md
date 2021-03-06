@@ -1,7 +1,7 @@
 ---
 name: ISSUE
-about: Template of add questions
-title: "添加题目描述文件"
+about: Template of issue
+title: "issue提交模板"
 labels: status/pending
 assignees: 
 ---
@@ -13,7 +13,9 @@ assignees:
 ## 添加题目
 
 * **题目名称：** 
-* **题目来源：** 
 * **提交路径：** 
 * **题目归类：**
+* **题解来源：** 
+
+
 
