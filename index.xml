@@ -1,4 +1,14 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>OS-EDU</title><link>https://os-edu.github.io/</link><description>Recent content on OS-EDU</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Mon, 05 Apr 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://os-edu.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>PAT-B1030.完美数列</title><link>https://os-edu.github.io/posts/pat-a1030.%E5%AE%8C%E7%BE%8E%E6%95%B0%E5%88%97/</link><pubDate>Mon, 05 Apr 2021 00:00:00 +0000</pubDate><guid>https://os-edu.github.io/posts/pat-a1030.%E5%AE%8C%E7%BE%8E%E6%95%B0%E5%88%97/</guid><description>PAT-B1030.完美数列 作者：freedom3219
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>OS-EDU</title><link>https://os-edu.github.io/</link><description>Recent content on OS-EDU</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Sun, 11 Apr 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://os-edu.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>PAT-B1036.跟奥巴马一起编程</title><link>https://os-edu.github.io/posts/pat-b1036.%E8%B7%9F%E5%A5%A5%E5%B7%B4%E9%A9%AC%E4%B8%80%E8%B5%B7%E7%BC%96%E7%A8%8B/</link><pubDate>Sun, 11 Apr 2021 00:00:00 +0000</pubDate><guid>https://os-edu.github.io/posts/pat-b1036.%E8%B7%9F%E5%A5%A5%E5%B7%B4%E9%A9%AC%E4%B8%80%E8%B5%B7%E7%BC%96%E7%A8%8B/</guid><description>PAT-B1036.跟奥巴马一起编程 作者：AKA二夕
+审核：freedom3219
+一、题目详情 美国总统奥巴马不仅呼吁所有人都学习编程，甚至以身作则编写代码，成为美国历史上首位编写计算机代码的总统。2014 年底，为庆祝“计算机科学教育周”正式启动，奥巴马编写了很简单的计算机代码：在屏幕上画一个正方形。现在你也跟他一起画吧！
+输入格式： 输入在一行中给出正方形边长 N（3≤N≤20）和组成正方形边的某种字符 C，间隔一个空格。
+输出格式： 输出由给定字符 C 画出的正方形。但是注意到行间距比列间距大，所以为了让结果看上去更像正方形，我们输出的行数实际上是列数的 50%（四舍五入取整）。
+输入样例： 10 a 输出样例： aaaaaaaaaa a a a a a a aaaaaaaaaa 二、题目分析 0、唠唠嗑 看见题目，我们不禁大吃一惊，连奥巴马都会写程序了，你竟然还没关注 OS-EDU，由此也可以看出，在不久的将来，肯定人人都或多或少掌握一点编程的本领，但未必人人都能上战场，要想成为一名优秀的程序猿，熟练地解决一些常见的问题是必须要具备的，今天就让我们一起看看前美国总统奥巴马到底写了个der？？
+1、抽取题干有效信息 更新了这么多期博客，针对于图形输出的案例，这篇也是第一个，记得刚学编程的时候，处理会学 “hello world”，最喜欢的玩得就是输出各种有意思的图形了。
+题目要求是输出一个正方形；再看看输入参数，N 正方形边长，字符 C 组成正方形边长的元素，因为我们首先需要根据要求定义相关的变量，例如：int N; char c; 这样就搞定了输入的问题。
+再看看输出：根据题目要求，由于行数是列数的一半（四舍五入），因此当列数 col 是奇数的时候，行数row 就是 col / 2 + 1；当列数 col 是偶数的时候，行数 row 就是 col / 2。注：列数实际上就是正方形的边长，即输入的 N。
+2、题目思路分析 处理好了行和列，最后就是怎么按照规则给打印出来呢？？
+先来看一下题目中给的样例，再结合我们小学校一年级学过的关于正方形的知识，不难发现：输出的正方形是由三部分组成的，即 第 1 行，第 2 ~ row-1 行以及最后一行。再仔细看看，原来第一行和最后一行是一样的啊，就是输入的字符 C 的个数，那么就直接使用 for 循环遍历输出即可。</description></item><item><title>PAT-B1030.完美数列</title><link>https://os-edu.github.io/posts/pat-a1030.%E5%AE%8C%E7%BE%8E%E6%95%B0%E5%88%97/</link><pubDate>Mon, 05 Apr 2021 00:00:00 +0000</pubDate><guid>https://os-edu.github.io/posts/pat-a1030.%E5%AE%8C%E7%BE%8E%E6%95%B0%E5%88%97/</guid><description>PAT-B1030.完美数列 作者：freedom3219
 审核：AKA二夕
 一、题目详情 题目描述： 给定一个正整数数列，和正整数 p，设这个数列中的最大值是 M，最小值是 m，如果 M ≤ m p，则称这个数列是完美数列。
 现在给定参数 p 和一些正整数，请你从中选择尽可能多的数构成一个完美数列。
