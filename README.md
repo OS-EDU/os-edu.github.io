@@ -1,4 +1,7 @@
 # os-edu.github.io
+
+[![Publish Site](https://github.com/OS-EDU/os-edu.github.io/actions/workflows/site.yaml/badge.svg?branch=main)](https://github.com/OS-EDU/os-edu.github.io/actions/workflows/site.yaml)
+
 The web site for host the pages of os-edu, normally we publish a WeChat public account article after creating a new post in this site.
 
 ## preview os-edu in local
