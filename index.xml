@@ -1,4 +1,12 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>OS-EDU</title><link>https://os-edu.github.io/</link><description>Recent content on OS-EDU</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Mon, 13 Sep 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://os-edu.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>PAT-B1003.我要通过！</title><link>https://os-edu.github.io/posts/pat-b1003.%E6%88%91%E8%A6%81%E9%80%9A%E8%BF%87/</link><pubDate>Mon, 13 Sep 2021 00:00:00 +0000</pubDate><guid>https://os-edu.github.io/posts/pat-b1003.%E6%88%91%E8%A6%81%E9%80%9A%E8%BF%87/</guid><description>PAT-B1003.我要通过！ 作者：freedom3219
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>OS-EDU</title><link>https://os-edu.github.io/</link><description>Recent content on OS-EDU</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Thu, 16 Sep 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://os-edu.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>PAT-B1023.组个最小数</title><link>https://os-edu.github.io/posts/pat-b1023.%E7%BB%84%E4%B8%AA%E6%9C%80%E5%B0%8F%E6%95%B0/</link><pubDate>Thu, 16 Sep 2021 00:00:00 +0000</pubDate><guid>https://os-edu.github.io/posts/pat-b1023.%E7%BB%84%E4%B8%AA%E6%9C%80%E5%B0%8F%E6%95%B0/</guid><description>PAT-B1023.组个最小数 作者：禾定
+审核：AKA二夕
+一、题目详情 题目描述： 给定数字 0-9 各若干个。你可以以任意顺序排列这些数字，但必须全部使用。目标是使得最后得到的数尽可能小（注意 0 不能做首位）。例如：给定两个 0，两个 1，三个 5，一个 8，我们得到的最小的数就是 10015558。
+现给定数字，请编写程序输出能够组成的最小的数。
+输入格式： 输入在一行中给出 10 个非负整数，顺序表示我们拥有数字 0、数字 1、……数字 9 的个数。整数间用一个空格分隔。10 个数字的总个数不超过 50，且至少拥有 1 个非 0 的数字。
+输出格式： 在一行中输出能够组成的最小的数。
+输入样例： 2 2 0 0 0 3 0 0 1 0 输出样例： 10015558 二、题目分析 各位小伙伴，我们又见面啦！这期推送给大家带来的是 PAT-B1023.组个最小数 。大家刚看见题目可能会认为这道题十分简单易上手，但是题目到底是怎样的呢？话不多说，我们快来一起仔细分析这个题目：
+1、题目信息提取 首先我们要把题目给理解到位，本题的意思是先把 0-9 这 10 个数字给按顺序排好，是这个样子：
+0 1 2 3 4 5 6 7 8 9 然后我们要输入的 10 个数字对应的是上面 0-9 每个数字的个数！这个是重点哦！就拿本题输入样例来说，我们首先按照顺序输入每个数字的个数：2 2 0 0 0 3 0 0 1 0 ，即这 10 个数字按顺序表示我们拥有数字 0、数字 1、……数字 9 的个数。所以输入样例表示的是我们有：2 个 0，2 个 1，0 个 2，0 个 3，0 个 4，3 个 5，0 个 6，0 个 7，1 个 8，0 个 9。这样的话我们只有 8 个数字，这 8 个数字组成的最小数就是我们要输出的 10015558。</description></item><item><title>PAT-B1003.我要通过！</title><link>https://os-edu.github.io/posts/pat-b1003.%E6%88%91%E8%A6%81%E9%80%9A%E8%BF%87/</link><pubDate>Mon, 13 Sep 2021 00:00:00 +0000</pubDate><guid>https://os-edu.github.io/posts/pat-b1003.%E6%88%91%E8%A6%81%E9%80%9A%E8%BF%87/</guid><description>PAT-B1003.我要通过！ 作者：freedom3219
 审核：AKA二夕
 一、题目详情 题目描述： “答案正确” 是自动判题系统给出的最令人欢喜的回复。本题属于 PAT 的“答案正确”大派送 —— 只要读入的字符串满足下列条件，系统就输出“答案正确”，否则输出“答案错误”。
 得到“答案正确”的条件是：
